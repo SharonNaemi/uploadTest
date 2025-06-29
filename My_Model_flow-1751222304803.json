@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "id": "flow-1751222304803",
+    "timestamp": "2025-06-29T18:38:24.803Z"
+  },
+  "nodes": [
+    {
+      "id": "c4122b30-ffe5-49a5-ac36-567070dcdfb9",
+      "type": "dataTypeNode",
+      "position": {
+        "x": -75,
+        "y": 300
+      },
+      "data": {
+        "label": "int",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "identifiers": [
+          "q796601"
+        ],
+        "dataType": "int",
+        "value": "5",
+        "outputIdentifier": "a",
+        "outputs": [
+          {
+            "identifier": "a",
+            "size": "3",
+            "type": "classical"
+          }
+        ],
+        "size": 3
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": -75,
+        "y": 300
+      },
+      "dragging": true
+    },
+    {
+      "id": "9533c286-a818-4d06-8c06-29030775a8dc",
+      "type": "statePreparationNode",
+      "position": {
+        "x": 525,
+        "y": 360
+      },
+      "data": {
+        "label": "Encode Value",
+        "inputs": [
+          {
+            "id": "c4122b30-ffe5-49a5-ac36-567070dcdfb9",
+            "outputIdentifier": "a",
+            "identifiers": [
+              "q796601"
+            ]
+          },
+          {
+            "id": "c4122b30-ffe5-49a5-ac36-567070dcdfb9",
+            "identifiers": [
+              "q796601"
+            ]
+          }
+        ],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "identifiers": [
+          "q681957"
+        ],
+        "encodingType": "Basis Encoding",
+        "bound": 0,
+        "size": "9",
+        "outputIdentifier": "b",
+        "outputs": [
+          {
+            "identifier": "b",
+            "size": "3",
+            "type": "quantum"
+          }
+        ]
+      },
+      "width": 320,
+      "height": 373,
+      "positionAbsolute": {
+        "x": 525,
+        "y": 360
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "c4122b30-ffe5-49a5-ac36-567070dcdfb9",
+      "sourceHandle": "classicalHandleDataTypeOutput0c4122b30-ffe5-49a5-ac36-567070dcdfb9",
+      "target": "9533c286-a818-4d06-8c06-29030775a8dc",
+      "targetHandle": "classicalHandleStatePreparationInput09533c286-a818-4d06-8c06-29030775a8dc",
+      "type": "classicalEdge",
+      "id": "699eb3a4-84c6-4bf7-98f2-ce7bc3957e7f",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": true
+      },
+      "selected": false,
+      "hidden": false
+    }
+  ],
+  "viewport": {
+    "x": 99.71739130434787,
+    "y": -175.65316205533594,
+    "zoom": 0.8241106719367588
+  }
+}
